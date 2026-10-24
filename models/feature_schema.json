@@ -1,0 +1,175 @@
+{
+  "features": [
+    "N",
+    "P",
+    "K",
+    "pH",
+    "EC",
+    "OC",
+    "S",
+    "Zn",
+    "Fe",
+    "Cu",
+    "Mn",
+    "B"
+  ],
+  "feature_info": {
+    "N": {
+      "label": "Nitrogen (N)",
+      "unit": "mg/kg",
+      "observed_min": 6.0,
+      "observed_max": 383.0,
+      "hard_min": 0.0,
+      "hard_max": 1149.0,
+      "step": 1.0
+    },
+    "P": {
+      "label": "Phosphorus (P)",
+      "unit": "mg/kg",
+      "observed_min": 2.9,
+      "observed_max": 125.0,
+      "hard_min": 0.0,
+      "hard_max": 375.0,
+      "step": 0.1
+    },
+    "K": {
+      "label": "Potassium (K)",
+      "unit": "mg/kg",
+      "observed_min": 11.0,
+      "observed_max": 887.0,
+      "hard_min": 0.0,
+      "hard_max": 2661.0,
+      "step": 1.0
+    },
+    "pH": {
+      "label": "Soil pH",
+      "unit": "pH units",
+      "observed_min": 6.96,
+      "observed_max": 11.15,
+      "hard_min": 0.0,
+      "hard_max": 14.0,
+      "step": 0.01
+    },
+    "EC": {
+      "label": "Electrical conductivity (EC)",
+      "unit": "dS/m",
+      "observed_min": 0.21,
+      "observed_max": 0.95,
+      "hard_min": 0.0,
+      "hard_max": 2.85,
+      "step": 0.01
+    },
+    "OC": {
+      "label": "Organic carbon (OC)",
+      "unit": "%",
+      "observed_min": 0.1,
+      "observed_max": 1.27,
+      "hard_min": 0.0,
+      "hard_max": 3.81,
+      "step": 0.01
+    },
+    "S": {
+      "label": "Sulphur (S)",
+      "unit": "mg/kg",
+      "observed_min": 0.64,
+      "observed_max": 31.0,
+      "hard_min": 0.0,
+      "hard_max": 93.0,
+      "step": 0.1
+    },
+    "Zn": {
+      "label": "Zinc (Zn)",
+      "unit": "mg/kg",
+      "observed_min": 0.07,
+      "observed_max": 0.85,
+      "hard_min": 0.0,
+      "hard_max": 2.55,
+      "step": 0.01
+    },
+    "Fe": {
+      "label": "Iron (Fe)",
+      "unit": "mg/kg",
+      "observed_min": 0.21,
+      "observed_max": 10.55,
+      "hard_min": 0.0,
+      "hard_max": 31.65,
+      "step": 0.01
+    },
+    "Cu": {
+      "label": "Copper (Cu)",
+      "unit": "mg/kg",
+      "observed_min": 0.09,
+      "observed_max": 3.02,
+      "hard_min": 0.0,
+      "hard_max": 9.06,
+      "step": 0.01
+    },
+    "Mn": {
+      "label": "Manganese (Mn)",
+      "unit": "mg/kg",
+      "observed_min": 0.11,
+      "observed_max": 31.0,
+      "hard_min": 0.0,
+      "hard_max": 93.0,
+      "step": 0.01
+    },
+    "B": {
+      "label": "Boron (B)",
+      "unit": "mg/kg",
+      "observed_min": 0.06,
+      "observed_max": 2.82,
+      "hard_min": 0.0,
+      "hard_max": 8.46,
+      "step": 0.01
+    }
+  },
+  "class_names": {
+    "0": "Low",
+    "1": "Medium",
+    "2": "High"
+  },
+  "class_medians_train": {
+    "Low": {
+      "N": 201.0,
+      "P": 7.5,
+      "K": 475.0,
+      "pH": 7.5,
+      "EC": 0.54,
+      "OC": 0.59,
+      "S": 6.64,
+      "Zn": 0.36,
+      "Fe": 3.45,
+      "Cu": 0.96,
+      "Mn": 8.02,
+      "B": 0.4
+    },
+    "Medium": {
+      "N": 295.0,
+      "P": 8.6,
+      "K": 486.0,
+      "pH": 7.5,
+      "EC": 0.55,
+      "OC": 0.59,
+      "S": 6.64,
+      "Zn": 0.36,
+      "Fe": 3.7800000000000002,
+      "Cu": 0.87,
+      "Mn": 8.54,
+      "B": 0.42
+    },
+    "High": {
+      "N": 333.0,
+      "P": 13.8,
+      "K": 454.0,
+      "pH": 7.5,
+      "EC": 0.52,
+      "OC": 0.51,
+      "S": 6.33,
+      "Zn": 0.35,
+      "Fe": 4.13,
+      "Cu": 0.87,
+      "Mn": 9.05,
+      "B": 0.48
+    }
+  }
+}

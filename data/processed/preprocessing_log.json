@@ -1,0 +1,41 @@
+{
+  "rows_in": 880,
+  "dropped_missing_target": 0,
+  "dropped_duplicates": 0,
+  "dropped_implausible": 4,
+  "implausible_rows": {
+    "519": "pH=0.9 outside [3.0, 12.0]",
+    "521": "pH=0.9 outside [3.0, 12.0]",
+    "667": "OC=24.0 outside [0.0, 10.0]; Zn=38.0 outside [0.0, 10.0]",
+    "659": "Zn=42.0 outside [0.0, 10.0]; Fe=44.0 outside [0.0, 40.0]"
+  },
+  "rows_out": 876,
+  "train_rows": 700,
+  "test_rows": 176,
+  "test_size": 0.2,
+  "random_state": 42,
+  "stratified": true,
+  "features": [
+    "N",
+    "P",
+    "K",
+    "pH",
+    "EC",
+    "OC",
+    "S",
+    "Zn",
+    "Fe",
+    "Cu",
+    "Mn",
+    "B"
+  ],
+  "procedure": [
+    "load and validate schema",
+    "coerce numeric columns",
+    "drop rows with missing target",
+    "drop exact duplicates",
+    "drop rows outside plausibility bounds",
+    "stratified 80/20 split",
+    "imputation/scaling are fitted inside the model pipeline on training data only"
+  ]
+}

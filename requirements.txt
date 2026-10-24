@@ -1,0 +1,9 @@
+# Versions marked (tested) were used to train and test the saved model in this project.
+# The saved model is a scikit-learn pipeline: keep scikit-learn at the same version, or re-train.
+scikit-learn==1.8.0   # (tested)
+pandas==3.0.2         # (tested)
+numpy==2.4.4          # (tested)
+joblib==1.5.3         # (tested)
+matplotlib==3.10.8    # (tested)
+streamlit>=1.40       # app UI (NOT installed in the authoring sandbox; see README)
+pytest>=8.0           # test runner (tests are plain unittest and also run with: python -m unittest)

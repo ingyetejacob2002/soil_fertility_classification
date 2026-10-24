@@ -1,0 +1,74 @@
+DATA AUDIT (raw dataset)
+============================================================
+Rows: 880   Columns: 13
+Missing values (total): 0
+Exact duplicate rows: 0
+
+Class distribution:
+  0 (Low): 401  (45.6%)
+  1 (Medium): 440  (50.0%)
+  2 (High): 39  (4.4%)
+
+Feature summary:
+    count     mean      std    min      25%      50%      75%     max
+N   880.0  246.738   77.389   6.00  201.000  257.000  307.000  383.00
+P   880.0   14.562   21.968   2.90    6.800    8.100   10.550  125.00
+K   880.0  499.978  124.223  11.00  412.000  475.000  581.000  887.00
+pH  880.0    7.510    0.465   0.90    7.350    7.500    7.630   11.15
+EC  880.0    0.544    0.142   0.10    0.430    0.545    0.640    0.95
+OC  880.0    0.618    0.843   0.10    0.380    0.590    0.780   24.00
+S   880.0    7.545    4.424   0.64    4.700    6.640    8.750   31.00
+Zn  880.0    0.469    1.894   0.07    0.280    0.360    0.470   42.00
+Fe  880.0    4.141    3.110   0.21    2.050    3.565    6.320   44.00
+Cu  880.0    0.952    0.466   0.09    0.630    0.930    1.250    3.02
+Mn  880.0    8.667    4.299   0.11    6.225    8.345   11.472   31.00
+B   880.0    0.590    0.571   0.06    0.270    0.405    0.610    2.82
+
+Rows outside the plausibility bounds (candidate data errors):
+  raw row 519: pH=0.9 outside [3.0, 12.0]
+  raw row 521: pH=0.9 outside [3.0, 12.0]
+  raw row 667: OC=24.0 outside [0.0, 10.0]; Zn=38.0 outside [0.0, 10.0]
+  raw row 659: Zn=42.0 outside [0.0, 10.0]; Fe=44.0 outside [0.0, 40.0]
+
+CLEANING LOG
+{
+  "rows_in": 880,
+  "dropped_missing_target": 0,
+  "dropped_duplicates": 0,
+  "dropped_implausible": 4,
+  "implausible_rows": {
+    "519": "pH=0.9 outside [3.0, 12.0]",
+    "521": "pH=0.9 outside [3.0, 12.0]",
+    "667": "OC=24.0 outside [0.0, 10.0]; Zn=38.0 outside [0.0, 10.0]",
+    "659": "Zn=42.0 outside [0.0, 10.0]; Fe=44.0 outside [0.0, 40.0]"
+  },
+  "rows_out": 876,
+  "train_rows": 700,
+  "test_rows": 176,
+  "test_size": 0.2,
+  "random_state": 42,
+  "stratified": true,
+  "features": [
+    "N",
+    "P",
+    "K",
+    "pH",
+    "EC",
+    "OC",
+    "S",
+    "Zn",
+    "Fe",
+    "Cu",
+    "Mn",
+    "B"
+  ],
+  "procedure": [
+    "load and validate schema",
+    "coerce numeric columns",
+    "drop rows with missing target",
+    "drop exact duplicates",
+    "drop rows outside plausibility bounds",
+    "stratified 80/20 split",
+    "imputation/scaling are fitted inside the model pipeline on training data only"
+  ]
+}

@@ -1,0 +1,42 @@
+{
+  "selected_algorithm": "Decision Tree",
+  "selection_rule": "highest mean 5-fold cross-validated macro-F1 on the training set (diagnostic models excluded)",
+  "trained_at_utc": "2026-10-15T09:22:46+00:00",
+  "scikit_learn_version": "1.8.0",
+  "numpy_version": "2.4.4",
+  "pandas_version": "3.0.2",
+  "dataset_file": "dataset1.csv (Kaggle 'Soil Fertility Dataset')",
+  "rows_raw": 880,
+  "rows_clean": 876,
+  "rows_removed_implausible": 4,
+  "n_train": 700,
+  "n_test": 176,
+  "class_distribution": {
+    "train": {
+      "Low": 321,
+      "Medium": 348,
+      "High": 31
+    },
+    "test": {
+      "Low": 80,
+      "Medium": 88,
+      "High": 8
+    }
+  },
+  "features": [
+    "N",
+    "P",
+    "K",
+    "pH",
+    "EC",
+    "OC",
+    "S",
+    "Zn",
+    "Fe",
+    "Cu",
+    "Mn",
+    "B"
+  ],
+  "cv_f1_macro": 0.7807429143129275,
+  "cv_accuracy": 0.8885714285714286
+}
